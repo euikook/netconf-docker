@@ -1,0 +1,6 @@
+services:
+  backend:
+    build: .
+    image: euikook/netconf-base:latest
+version: '3.0'
+
