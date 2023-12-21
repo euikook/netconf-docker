@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+TOP_DIR=$(realpath $(dirname $_)/..)
+cd ${TOP_DIR}
+docker run --name netconf-client --network netconf  -it --rm euikook/netconf bash
