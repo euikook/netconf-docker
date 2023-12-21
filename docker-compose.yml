@@ -1,6 +1,11 @@
 services:
-  backend:
+  netconf:
     build: .
-    image: euikook/netconf-base:latest
+    image: euikook/netconf:latest
+    ports:
+    - "830:830"
+    command: ["netopeer2-server", "-d", "-v2"]
+
+
 version: '3.0'
 
